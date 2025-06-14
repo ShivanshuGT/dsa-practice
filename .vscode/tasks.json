@@ -1,0 +1,19 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "compile and run",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "$fullPath = Resolve-Path \"${file}\"; javac \"$fullPath\"; if ($?) { Get-Content input.txt | java \"${fileBasenameNoExtension}\" | Out-File -Encoding utf8 output.txt }"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
