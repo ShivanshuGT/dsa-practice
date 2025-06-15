@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class BasicMaths {
@@ -37,6 +39,58 @@ public class BasicMaths {
         }
         System.out.print("reverse of the number is " + result);
     }
+
+    private static void isTheNumberAPalindrome(int n){
+        int number = n;
+        int reverse = 0;
+        while(n > 0){
+            reverse = reverse * 10 + n % 10;
+            n = n / 10;
+        }
+        if(number == reverse){
+            System.out.print("Given Number is a Palindrome");
+        }else{
+            System.out.print("Given Number is not a Palindrome");
+
+        }
+    }
+
+    private static void isArmstrong(int n){
+        int number = n;
+        int sum = 0;
+        int numberOfDigits = String.valueOf(n).length();
+        while (n > 0) {
+            int digit = n % 10;
+            sum = (int) (sum + Math.pow(digit, numberOfDigits));
+            n = n / 10;
+        }
+        if(sum == number){
+            System.out.print("Given Number is an Armstrong Number");
+        }else{
+            System.out.print("Given Number is not an Armstrong Number");
+
+        }
+    }
+
+    private static void printAllDivisors(int n){
+        List<Integer> list = new ArrayList<>();
+
+        // TC -> O(sqrt(n))
+        for(int i=1; i*i <= n; i++) {
+            if(n % i ==0){
+                list.add(i);
+                if(i != (n/i))
+                list.add(n/i);
+            }
+        }
+
+        // TC -> O(x.log(x)) where x is the number of factors of n
+        list.sort(null);
+
+        // TC -> O(x) where x is the number of factors of n
+        list.forEach(x -> System.out.print(x + ", "));
+
+    }
     
 
     public static void main(String[] args) {
@@ -44,7 +98,10 @@ public class BasicMaths {
         int n = sc.nextInt();
         // printAllDigits(n);
         // printNumberOfDigits(n);
-        printReverseOfADigit(n);
+        // printReverseOfADigit(n);
+        // isTheNumberAPalindrome(n);
+        // isArmstrong(n);
+        printAllDivisors(n);
         sc.close();
     }
 }
