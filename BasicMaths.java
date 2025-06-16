@@ -91,17 +91,70 @@ public class BasicMaths {
         list.forEach(x -> System.out.print(x + ", "));
 
     }
+
+    private static void isPrime(int n){
+        // a number is prime only if it has exactly two factors ie., 1 and itself
+        // by this rule 1 is not a prime number because there is only one factor of 1
+        int counter = 0;
+        for(int i = 1 ; i*i <= n ; i++){
+            if(n % i == 0){
+                counter +=1;
+                if((i) != (n/i)){
+                    counter += 1;
+                }
+            }
+        }
+
+        if(counter == 2){
+            System.out.print("It is a prime number");
+        }else{
+            System.out.print("It is not a prime number");
+        }
+    }
+
+    private static void findHCF(int n1, int n2){
+        int min = Math.min(n1, n2);
+        int hcf = 1; // by default hcf of any two numbers is 1
+        for(int i =1; i<= min; i++){
+            if((n1 % i ==0) && (n2 % i == 0)){
+                hcf = i;
+            }
+        }
+
+        System.out.print("HCF / GCD of "+ n1+ " and "+ n2 +" is : "+ hcf);
+    }
+
+    private static void findHCFByEuclideanAlgo(int n1, int n2){
+        while( n1 > 0 && n2 > 0){
+            if(n1 > n2){
+                n1 = n1 % n2;
+            }else{
+                n2 = n2 % n1;
+            }
+        }
+        if(n1 == 0){
+            System.out.print("GCD is " + n2);
+        }
+        else{
+            System.out.print("GCD is " + n1);
+
+        }
+    }
     
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        int n1 = sc.nextInt();
+        int n2 = sc.nextInt();
         // printAllDigits(n);
         // printNumberOfDigits(n);
         // printReverseOfADigit(n);
         // isTheNumberAPalindrome(n);
         // isArmstrong(n);
-        printAllDivisors(n);
+        // printAllDivisors(n);
+        // isPrime(n);
+        // findHCF(n1, n2);
+        findHCFByEuclideanAlgo(n1, n2);
         sc.close();
     }
 }
