@@ -58,6 +58,9 @@ public class SortArrayOfZeroOnesTwos {
                 high -= 1;
             }
         }
+
+        // TC -> O(n)
+        // SC -> O(1)
     }
 
     public static void swap(int arr[], int i, int j){
