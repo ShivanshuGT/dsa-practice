@@ -33,6 +33,6 @@ public class BasicHashing {
         for(int i = 0; i< querySize; i++)
         System.out.println(charHashArr[sc.next().charAt(0)]);
 
-
+        sc.close();
     }
 }
