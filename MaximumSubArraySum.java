@@ -76,6 +76,8 @@ public class MaximumSubArraySum {
         }
         
         System.out.println("Maximum sub array sum is "+ max +" with indices ["+beg+","+end + "]");
+        // SC -> O(n)
+        // TC -> O(1)
     }
 
     
