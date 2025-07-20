@@ -97,7 +97,7 @@ public class ThreeSum {
 
         return result;
 
-        // TC -> O(n x n)
+        // TC -> O(nlogn) + O(n x n)
         // SC -> O(m) where m is the number of triplets
     }
     
