@@ -1,2 +1,1 @@
-﻿Missing Number is 5
-Repeating Number is 1
+﻿Number of inversions = 8
