@@ -1,1 +1,1 @@
-﻿Number of inversions = 8
+﻿Number of reverse pairs are 15
