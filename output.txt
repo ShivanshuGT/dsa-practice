@@ -1,3 +1,1 @@
-﻿48
-48
-48
+﻿Element is not present in the given array
