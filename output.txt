@@ -1,1 +1,2 @@
-﻿Element is not present in the given array
+﻿The floor of target is 8
+The ceil value if target is 15
