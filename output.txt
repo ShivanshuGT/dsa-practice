@@ -1,1 +1,1 @@
-﻿Number of occurrences = 0
+﻿Element found at index 1
