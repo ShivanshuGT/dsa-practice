@@ -1,1 +1,1 @@
-﻿Minimum element is 1
+﻿The array has been rotated 0 times.
