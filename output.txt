@@ -1,1 +1,1 @@
-﻿Single Element is 2
+﻿Peak Element is at index 1
