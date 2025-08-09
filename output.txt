@@ -1,1 +1,1 @@
-﻿Koko should eat at least 4 bananas per hour.
+﻿Minimum number of days required = 12
