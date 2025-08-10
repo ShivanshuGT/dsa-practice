@@ -48,7 +48,7 @@ public class MinimumDaysMBouquets {
         }
         return -1;
 
-        // TC -> O(maxElement - minElement) x O(n)
+        // TC -> O(maxElement - minElement + 1) x O(n)
         // SC -> O(1)
     }
 
@@ -77,7 +77,7 @@ public class MinimumDaysMBouquets {
         }
         return result;
 
-        // TC -> O(log(maxElement - minElement)) x O(n)
+        // TC -> O(log(maxElement - minElement + 1)) x O(n)
         // SC -> O(1)
     }
 
