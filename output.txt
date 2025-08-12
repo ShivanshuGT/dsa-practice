@@ -1,1 +1,1 @@
-﻿The maximum value of minimum possible distance between the cows is 3
+﻿71
