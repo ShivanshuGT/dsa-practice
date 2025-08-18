@@ -43,12 +43,14 @@ public class BinarySearchinMatrix {
         int m = mat[0].length;
         for (int i = 0; i < n; i++) {
             if((mat[i][0] <= target) && (target <= mat[i][m-1])){
-                return binarySearch(mat[i], target);
+                if(binarySearch(mat[i], target)){
+                    return true;
+                }
             }
         }
         return false;
 
-        // TC -> O(n) + O(log(m))
+        // TC -> O(n x log(m))
         // SC- > O(1)
     }
 
