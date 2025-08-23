@@ -80,13 +80,48 @@ public class BinaryTreeIterativePostOrderTraversal {
         // SC -> O(2n) since we are using two stacks here
     }
 
-    
+    private static List<Integer> postOrderIterativeTraversalUsingOneStack(TreeNode root){
+        // Left Rigth Root
+        List<Integer> result = new ArrayList<>();
+        if(root == null){
+            return result;
+        }
+
+        TreeNode current = root;
+        Stack<TreeNode> stack = new Stack<>();
+        while (current != null || !stack.isEmpty()) {
+            if(current != null){
+                stack.add(current);
+                current = current.left;
+            }else{
+                TreeNode temp = stack.peek().right;
+                if(temp == null){
+                    temp = stack.peek();
+                    stack.pop();
+                    result.add(temp.data);
+
+                    while (!stack.isEmpty() && (temp == stack.peek().right)) {
+                        temp = stack.peek();
+                        stack.pop();
+                        result.add(temp.data);
+                    }
+                }else{
+                    current = temp;
+                }
+            }
+        }
+        return result;
+
+        // TC -> O(2n) since we are visiting each node twice
+        // SC -> O(H) = O(n) (in worst case when the tree is skewed)
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] input = sc.nextLine().split("\\s+");
         TreeNode root = buildTreeFromInput(input);
         System.out.println(postOrderIterativeTraversalUsingTwoStacks(root));
+        System.out.println(postOrderIterativeTraversalUsingOneStack(root));
         sc.close();
     }
 }
