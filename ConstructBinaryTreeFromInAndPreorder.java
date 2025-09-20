@@ -29,7 +29,7 @@ public class ConstructBinaryTreeFromInAndPreorder {
         int rootIndexInorder = inorderMap.get(root.data);
         int numberOfElementsOnLeftHandSide = rootIndexInorder - inStart;
 
-        root.left = build(inorderMap, inorder, inStart, rootIndexInorder-1, preorder, preStart+1, preEnd+numberOfElementsOnLeftHandSide);
+        root.left = build(inorderMap, inorder, inStart, rootIndexInorder-1, preorder, preStart+1, preStart+numberOfElementsOnLeftHandSide);
         root.right = build(inorderMap, inorder, rootIndexInorder+1, inEnd, preorder, preStart+numberOfElementsOnLeftHandSide+1, preEnd);
         return root;
         // TC -> O(nlogn)) (log(n) for using a map as well)
