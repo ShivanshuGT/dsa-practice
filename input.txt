@@ -1,2 +1,1 @@
-7 3 10 2 6 9 11 1 null 5 null 8 null null null null null 4 null
--100
+3 1 4 null null 2 null
