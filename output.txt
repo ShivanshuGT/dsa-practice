@@ -1,1 +1,7 @@
-﻿b d a c 
+﻿Shortest distance from 2 to 0 is 2147483647 units.
+Shortest distance from 2 to 1 is 2147483647 units.
+Shortest distance from 2 to 2 is 0 units.
+Shortest distance from 2 to 3 is 3 units.
+Shortest distance from 2 to 4 is 2147483647 units.
+Shortest distance from 2 to 5 is 2147483647 units.
+Shortest distance from 2 to 6 is 2147483647 units.
