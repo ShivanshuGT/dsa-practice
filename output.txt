@@ -1,7 +1,9 @@
-﻿Shortest distance from 2 to 0 is 2147483647 units.
-Shortest distance from 2 to 1 is 2147483647 units.
-Shortest distance from 2 to 2 is 0 units.
-Shortest distance from 2 to 3 is 3 units.
-Shortest distance from 2 to 4 is 2147483647 units.
-Shortest distance from 2 to 5 is 2147483647 units.
-Shortest distance from 2 to 6 is 2147483647 units.
+﻿Distance of node 0 from 7 is 4 units.
+Distance of node 1 from 7 is 3 units.
+Distance of node 2 from 7 is 2 units.
+Distance of node 3 from 7 is 4 units.
+Distance of node 4 from 7 is 3 units.
+Distance of node 5 from 7 is 2 units.
+Distance of node 6 from 7 is 1 units.
+Distance of node 7 from 7 is 0 units.
+Distance of node 8 from 7 is 1 units.
