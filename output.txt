@@ -1,9 +1,1 @@
-﻿Distance of node 0 from 7 is 4 units.
-Distance of node 1 from 7 is 3 units.
-Distance of node 2 from 7 is 2 units.
-Distance of node 3 from 7 is 4 units.
-Distance of node 4 from 7 is 3 units.
-Distance of node 5 from 7 is 2 units.
-Distance of node 6 from 7 is 1 units.
-Distance of node 7 from 7 is 0 units.
-Distance of node 8 from 7 is 1 units.
+﻿5
