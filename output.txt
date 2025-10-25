@@ -1,6 +1,2 @@
-﻿The shortest distance from 1 to 0 is 4 units.
-The shortest distance from 1 to 1 is 0 units.
-The shortest distance from 1 to 2 is 2 units.
-The shortest distance from 1 to 3 is 5 units.
-The shortest distance from 1 to 4 is 3 units.
-The shortest distance from 1 to 5 is 6 units.
+﻿The shortest path is : 
+2 1 4 
