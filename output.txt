@@ -1,1 +1,16 @@
-﻿There is a negative cycle present in the graph.
+﻿The distance from node 0 to node 0 is 0 units.
+The distance from node 0 to node 1 is 2 units.
+The distance from node 0 to node 2 is 5 units.
+The distance from node 0 to node 3 is 2147483647 units.
+The distance from node 1 to node 0 is 1 units.
+The distance from node 1 to node 1 is 0 units.
+The distance from node 1 to node 2 is 3 units.
+The distance from node 1 to node 3 is 2147483647 units.
+The distance from node 2 to node 0 is 2147483647 units.
+The distance from node 2 to node 1 is 2147483647 units.
+The distance from node 2 to node 2 is 0 units.
+The distance from node 2 to node 3 is 2147483647 units.
+The distance from node 3 to node 0 is 3 units.
+The distance from node 3 to node 1 is 5 units.
+The distance from node 3 to node 2 is 4 units.
+The distance from node 3 to node 3 is 0 units.
