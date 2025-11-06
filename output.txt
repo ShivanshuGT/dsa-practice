@@ -1,6 +1,2 @@
-﻿Edges are as below : 
-Edge : 0 -> 2
-Edge : 2 -> 1
-Edge : 2 -> 3
-Edge : 3 -> 4
-Sum of weight of edges of the MST is 5
+﻿Not Same
+Same
