@@ -1,2 +1,7 @@
-﻿Not Same
-Same
+﻿The weight of the minimum spanning tree of the graph is 17
+With edges as below : 
+From 1 -> 4 with weight 1
+From 1 -> 2 with weight 2
+From 2 -> 3 with weight 3
+From 1 -> 5 with weight 4
+From 2 -> 6 with weight 7
