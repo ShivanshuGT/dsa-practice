@@ -52,7 +52,7 @@ public class DisjointSetImpl {
             int parentU = findParent(u);
             int parentV = findParent(v);
 
-            if(rank.get(parentU) > rank.get(parentV)){
+            if(size.get(parentU) > size.get(parentV)){
                 // attaching 'v' below 'u'
                 parent.set(parentV, parentU);
                 size.set(parentU, size.get(parentU) + size.get(parentV));
