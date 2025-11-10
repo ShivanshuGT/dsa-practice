@@ -1,9 +1,13 @@
-9 8
-0 1 1
-1 2 1
-2 3 1
-0 2 1
-0 3 1
-4 5 1
-5 6 1
-7 8 1
+6
+John 3
+j1@com j2@com j3@com
+John 1
+j4@com
+raj 2
+r1@com r2@com
+John 2
+j1@com j5@com
+raj 2
+r2@com r3@com
+Mary 1
+m1@com
