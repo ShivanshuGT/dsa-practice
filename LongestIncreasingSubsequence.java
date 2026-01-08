@@ -40,6 +40,62 @@ public class LongestIncreasingSubsequence {
         // TC -> O(n x n)
         // SC -> O(n x n) + O(n)
     }
+
+    private static int findLISTabulation(int[] arr){
+        int n = arr.length;
+
+        int[][] dp = new int[n+1][n+1];
+
+        // base case
+        // for ind == n
+        for (int prevInd = 0; prevInd <= n; prevInd++) {
+            dp[n][prevInd] = 0;
+        }
+
+        for (int ind = n-1; ind >= 0; ind--) {
+            for (int prevInd = ind-1; prevInd >= -1; prevInd--) {
+                int skip = 0 + dp[ind+1][prevInd+1];
+                int pick = 0;
+                if((prevInd == -1) || (arr[ind] > arr[prevInd])){
+                    pick = 1 + dp[ind+1][ind+1];
+                }
+                dp[ind][prevInd+1] = Math.max(skip, pick);
+            }
+        }
+
+        return dp[0][0];
+        // TC -> O(n x n)
+        // SC -> O(n x n)
+    }
+
+    private static int findLISSpaceOptimized(int[] arr){
+        int n = arr.length;
+
+        int[] dp = new int[n+1];
+
+        // base case
+        // for ind == n
+        for (int prevInd = 0; prevInd <= n; prevInd++) {
+            dp[prevInd] = 0;
+        }
+
+        for (int ind = n-1; ind >= 0; ind--) {
+            int[] current = new int[n+1];
+            for (int prevInd = n-1; prevInd >= -1; prevInd--) {
+                int skip = 0 + dp[prevInd+1];
+                int pick = 0;
+                if((prevInd == -1) || (arr[ind] > arr[prevInd])){
+                    pick = 1 + dp[ind+1];
+                }
+                current[prevInd+1] = Math.max(skip, pick);
+            }
+            dp = current;
+        }
+
+        return dp[0];
+        // TC -> O(n x n)
+        // SC -> O(n x 2)
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -48,6 +104,8 @@ public class LongestIncreasingSubsequence {
             arr[i] = sc.nextInt();
         }
         System.out.println(findLISRecursive(arr));
+        System.out.println(findLISTabulation(arr));
+        System.out.println(findLISSpaceOptimized(arr));
         sc.close();
     }
 }
