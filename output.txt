@@ -1,1 +1,5 @@
-﻿1 4 8 16 
+﻿xb 
+xbc 
+cxbc 
+pcxbc 
+pcxbcf 
