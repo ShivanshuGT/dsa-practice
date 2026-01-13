@@ -1,6 +1,2 @@
-5
-xbc
-pcxbcf
-xb
-cxbc
-pcxbc
+8
+1 11 2 10 4 5 2 1
