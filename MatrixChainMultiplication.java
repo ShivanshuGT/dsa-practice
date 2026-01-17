@@ -46,6 +46,34 @@ public class MatrixChainMultiplication {
         // TC -> O(n x n x n)
         // SC -> O(n x n) + O(n)
     }
+
+    private static int findMinOperationsTabulation(int[] arr){
+        int n = arr.length;
+
+        int[][] dp = new int[n][n];
+
+        // base case
+        for (int i = 1; i < n; i++) {
+            dp[i][i] = 0;
+        }
+
+        for (int i = n-1; i >= 1; i--) {
+            for (int j = i+1; j < n; j++) {
+                int minm = Integer.MAX_VALUE;
+                for (int k = 1; k < j; k++) {
+                    int steps = arr[i-1] * arr[k] * arr[j] + dp[i][k] + dp[k+1][j];
+                    if(steps < minm){
+                        minm = steps;
+                    }
+                }
+                dp[i][j] = minm;
+            }
+        }
+
+        return dp[1][n-1];
+        // TC -> O(n x n x n)
+        // SC -> O(n x n)
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -54,6 +82,7 @@ public class MatrixChainMultiplication {
             arr[i] = sc.nextInt();
         }
         System.out.println(findMinOperationsRecursive(arr));
+        System.out.println(findMinOperationsTabulation(arr));
         sc.close();
     }
 }
