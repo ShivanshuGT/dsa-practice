@@ -1,6 +1,1 @@
-﻿instagram.com
-google.com
-instagram.com
-tuf.org
-google.com
-tuf.org
+﻿false
