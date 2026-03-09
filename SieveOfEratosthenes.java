@@ -3,7 +3,7 @@ public class SieveOfEratosthenes {
     private static void printAllPrimesTillN(int n){
         int[] prime = new int[n+1];
 
-        for (int i = 0; i <= n; i++) {
+        for (int i = 2; i <= n; i++) {
             prime[i] = 1;
         }
 
@@ -22,6 +22,8 @@ public class SieveOfEratosthenes {
                 System.out.print(i + " ");
             }
         }
+        // TC -> O(n x log(log(n)))
+        // SC -> O(n)
     }
     public static void main(String[] args) {
         int n = 300000;
