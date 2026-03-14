@@ -1,6 +1,4 @@
-﻿8
-3
-2
-8
-3
-2
+﻿Prime factors of 56 are: 2 2 2 7 
+Prime factors of 17 are: 17 
+Prime factors of 95 are: 5 19 
+Prime factors of 12222 are: 12222 
