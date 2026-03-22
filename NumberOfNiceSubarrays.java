@@ -29,6 +29,8 @@ public class NumberOfNiceSubarrays {
 
     private static int countNiceSubarrays(int[] arr, int k){
         return countSubarraysWithOddNumberCountLeK(arr, k) - countSubarraysWithOddNumberCountLeK(arr, k-1);
+        // TC -> O(4 x n)
+        // SC -> O(1)
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
