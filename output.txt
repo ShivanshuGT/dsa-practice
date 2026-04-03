@@ -1,8 +1,1 @@
-﻿0
-1
-2
-3
-4
-5
-6
-7 jobs with total profit of 342
+﻿4 meetings can be performed with the following schedule: [3, 2, 5, 6]
