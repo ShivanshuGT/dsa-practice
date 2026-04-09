@@ -1,6 +1,5 @@
 ﻿Queue is empty... can't pop
 -1
-Queue is empty... can't find top
 -1
 1
 2
