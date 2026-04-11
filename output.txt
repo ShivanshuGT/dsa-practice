@@ -1,8 +1,6 @@
-﻿Queue is empty... can't pop
--1
+﻿-1
 -1
 1
 2
 2
-Queue is empty... can't pop
 -1
